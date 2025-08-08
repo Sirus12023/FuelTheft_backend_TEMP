@@ -36,9 +36,12 @@ npm install
 
 Create a `.env` file in the root directory:
 
-```env
 # Database Configuration
-DATABASE_URL="postgresql://username:password@localhost:5432/fuel_theft_db"
+# The DATABASE_URL will be provided when you run:
+#   npx prisma dev
+# It will prompt you for the database connection or generate one for you.
+# Example (if you want to set manually):
+# DATABASE_URL="postgresql://username:password@localhost:5432/fuel_theft_db"
 
 # Server Configuration
 PORT=3000
@@ -251,25 +254,5 @@ Check console output for detailed error messages. The application logs:
 
 For detailed API documentation, check the individual route files in `src/api/routes/` or test the endpoints using tools like Postman or curl.
 
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Add tests if applicable
-5. Submit a pull request
-
-## 📄 License
-
-This project is licensed under the ISC License.
-
-## 🆘 Support
-
-For issues and questions:
-1. Check the troubleshooting section
-2. Review existing issues
-3. Create a new issue with detailed information
-
----
 
 **Happy Coding! 🚀**
