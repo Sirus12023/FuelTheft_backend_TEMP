@@ -1,19 +1,19 @@
 # Fuel Theft Detection Backend
 
-A professional Node.js/Express backend for real-time fuel monitoring, theft detection, analytics, and alerting.
+A robust Node.js/Express backend for real-time fuel monitoring, theft detection, analytics, and alerting.
 
 ## Features
 
-- Real-time fuel level and consumption tracking
-- Automated theft detection and alerting
+- Real-time tracking of fuel levels and consumption
+- Automated detection and alerting of fuel theft
 - Analytics and reporting for fuel usage
-- RESTful API for vehicles, sensors, and data management
-- PostgreSQL database integration via Prisma ORM
-- Automated seeding for development and testing
+- RESTful API for managing vehicles, sensors, and data
+- PostgreSQL integration using Prisma ORM
+- Automated database seeding for development/testing
 
 ## Prerequisites
 
-- Node.js v18+
+- Node.js v18 or higher
 - PostgreSQL
 - npm
 
@@ -32,7 +32,8 @@ A professional Node.js/Express backend for real-time fuel monitoring, theft dete
 
 3. **Configure environment**
    - Create a `.env` file in the root directory.
-   - Set your PostgreSQL connection string:
+   - Set your PostgreSQL connection string and other environment variables.
+   - (Optional) Run `npx prisma dev` to help generate the database URL.
      ```
      DATABASE_URL="postgresql://username:password@localhost:5432/fuel_theft_db"
      PORT=3000
@@ -50,7 +51,7 @@ A professional Node.js/Express backend for real-time fuel monitoring, theft dete
    ```bash
    npm run dev
    ```
-   The server runs at `http://localhost:3000` by default.
+   The server will be available at `http://localhost:3000` by default.
 
 ## Database Schema Overview
 
@@ -117,4 +118,4 @@ A professional Node.js/Express backend for real-time fuel monitoring, theft dete
 
 ## Seeding
 
-To generate sample data for development:
+To generate sample data for development, run the seeding script as shown in the installation steps above.
